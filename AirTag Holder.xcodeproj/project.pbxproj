@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C97DFCC127E9D56A002774E7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DFCC027E9D56A002774E7 /* main.swift */; };
+		C97DFCC827E9D59F002774E7 /* step1-shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DFCC727E9D59F002774E7 /* step1-shape.swift */; };
+		C97DFCCD27E9D620002774E7 /* step2-sandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DFCCC27E9D620002774E7 /* step2-sandwich.swift */; };
+		C97DFCCF27E9D708002774E7 /* step3-bolts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DFCCE27E9D708002774E7 /* step3-bolts.swift */; };
+		C97DFCD127E9DE1B002774E7 /* step4-snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DFCD027E9DE1B002774E7 /* step4-snap.swift */; };
+		C9AA589227EC854300094D1E /* SwiftSCAD in Frameworks */ = {isa = PBXBuildFile; productRef = C9AA589127EC854300094D1E /* SwiftSCAD */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C97DFCBB27E9D56A002774E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C97DFCBD27E9D56A002774E7 /* AirTag Holder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AirTag Holder"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97DFCC027E9D56A002774E7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C97DFCC727E9D59F002774E7 /* step1-shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "step1-shape.swift"; sourceTree = "<group>"; };
+		C97DFCCC27E9D620002774E7 /* step2-sandwich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "step2-sandwich.swift"; sourceTree = "<group>"; };
+		C97DFCCE27E9D708002774E7 /* step3-bolts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "step3-bolts.swift"; sourceTree = "<group>"; };
+		C97DFCD027E9DE1B002774E7 /* step4-snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "step4-snap.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C97DFCBA27E9D56A002774E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AA589227EC854300094D1E /* SwiftSCAD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C97DFCB427E9D56A002774E7 = {
+			isa = PBXGroup;
+			children = (
+				C97DFCBF27E9D56A002774E7 /* AirTag Holder */,
+				C97DFCBE27E9D56A002774E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C97DFCBE27E9D56A002774E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C97DFCBD27E9D56A002774E7 /* AirTag Holder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C97DFCBF27E9D56A002774E7 /* AirTag Holder */ = {
+			isa = PBXGroup;
+			children = (
+				C97DFCC027E9D56A002774E7 /* main.swift */,
+				C97DFCC727E9D59F002774E7 /* step1-shape.swift */,
+				C97DFCCC27E9D620002774E7 /* step2-sandwich.swift */,
+				C97DFCCE27E9D708002774E7 /* step3-bolts.swift */,
+				C97DFCD027E9DE1B002774E7 /* step4-snap.swift */,
+			);
+			path = "AirTag Holder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C97DFCBC27E9D56A002774E7 /* AirTag Holder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97DFCC427E9D56A002774E7 /* Build configuration list for PBXNativeTarget "AirTag Holder" */;
+			buildPhases = (
+				C97DFCB927E9D56A002774E7 /* Sources */,
+				C97DFCBA27E9D56A002774E7 /* Frameworks */,
+				C97DFCBB27E9D56A002774E7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AirTag Holder";
+			packageProductDependencies = (
+				C9AA589127EC854300094D1E /* SwiftSCAD */,
+			);
+			productName = "AirTag Holder";
+			productReference = C97DFCBD27E9D56A002774E7 /* AirTag Holder */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C97DFCB527E9D56A002774E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C97DFCBC27E9D56A002774E7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C97DFCB827E9D56A002774E7 /* Build configuration list for PBXProject "AirTag Holder" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C97DFCB427E9D56A002774E7;
+			packageReferences = (
+				C9AA589027EC854300094D1E /* XCRemoteSwiftPackageReference "SwiftSCAD" */,
+			);
+			productRefGroup = C97DFCBE27E9D56A002774E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C97DFCBC27E9D56A002774E7 /* AirTag Holder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C97DFCB927E9D56A002774E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97DFCCF27E9D708002774E7 /* step3-bolts.swift in Sources */,
+				C97DFCC127E9D56A002774E7 /* main.swift in Sources */,
+				C97DFCD127E9DE1B002774E7 /* step4-snap.swift in Sources */,
+				C97DFCC827E9D59F002774E7 /* step1-shape.swift in Sources */,
+				C97DFCCD27E9D620002774E7 /* step2-sandwich.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C97DFCC227E9D56A002774E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C97DFCC327E9D56A002774E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C97DFCC527E9D56A002774E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4R2KAE48H2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C97DFCC627E9D56A002774E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4R2KAE48H2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C97DFCB827E9D56A002774E7 /* Build configuration list for PBXProject "AirTag Holder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97DFCC227E9D56A002774E7 /* Debug */,
+				C97DFCC327E9D56A002774E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97DFCC427E9D56A002774E7 /* Build configuration list for PBXNativeTarget "AirTag Holder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97DFCC527E9D56A002774E7 /* Debug */,
+				C97DFCC627E9D56A002774E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9AA589027EC854300094D1E /* XCRemoteSwiftPackageReference "SwiftSCAD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tomasf/SwiftSCAD.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9AA589127EC854300094D1E /* SwiftSCAD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9AA589027EC854300094D1E /* XCRemoteSwiftPackageReference "SwiftSCAD" */;
+			productName = SwiftSCAD;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C97DFCB527E9D56A002774E7 /* Project object */;
+}

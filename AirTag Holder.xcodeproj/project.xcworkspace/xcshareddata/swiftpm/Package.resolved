@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-collections",
+        "repositoryURL": "https://github.com/apple/swift-collections.git",
+        "state": {
+          "branch": null,
+          "revision": "48254824bb4248676bf7ce56014ff57b142b77eb",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "SwiftSCAD",
+        "repositoryURL": "https://github.com/tomasf/SwiftSCAD.git",
+        "state": {
+          "branch": "main",
+          "revision": "26d2a070a827b445c933996cfe3b65191328fbd9",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
