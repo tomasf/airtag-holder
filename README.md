@@ -129,9 +129,9 @@ bottomHalf()
 ```
 
 
-<img src="https://user-images.githubusercontent.com/26266/159237719-ae681e2f-b878-4c8c-95e2-feafb481bf6a.png" height="250" align="left"/>
-<img src="https://user-images.githubusercontent.com/26266/159237746-8216019d-646d-4c1c-a0a6-bd475255c824.png" height="250" align="left"/>
-<img src="https://user-images.githubusercontent.com/26266/159237757-86711287-0d71-4f58-97f6-cf4677555e25.png" height="250" align="left"/>
+<img src="https://user-images.githubusercontent.com/26266/159237719-ae681e2f-b878-4c8c-95e2-feafb481bf6a.png" height="240" align="left"/>
+<img src="https://user-images.githubusercontent.com/26266/159237746-8216019d-646d-4c1c-a0a6-bd475255c824.png" height="240" align="left"/>
+<img src="https://user-images.githubusercontent.com/26266/159237757-86711287-0d71-4f58-97f6-cf4677555e25.png" height="240" align="left"/>
 <br clear="all">
 
 ## Joining the two halves
