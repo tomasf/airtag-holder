@@ -159,7 +159,7 @@ private func half() -> Geometry3D {
 }
 ```
 
-The most common kind of 3D printing, and the one I use, is called FDM. Different methods of manufacturing has different constraints, and this also goes for FDM 3D printing. One limitation is overhang. Because layers are printed on top of one another, a layer can’t be much larger than the one below it. If it is, the strands are laid out in mid-air and will obviously fall down. As a rule of thumb, angles should be kept below 45° for good surface quality.
+Different methods of manufacturing has different constraints, and this also goes for FDM 3D printing. One limitation is overhang. Because layers are printed on top of one another, a layer can’t be much larger than the one below it. If it is, the strands are laid out in mid-air and will obviously fall down. As a rule of thumb, angles should be kept below 45° for good surface quality.
 
 <p align="center">
 <img width="482" align="center" src="https://user-images.githubusercontent.com/26266/159240212-105508c9-44d9-479c-b49c-5c76560fff27.png"/>
