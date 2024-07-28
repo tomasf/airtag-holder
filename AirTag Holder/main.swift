@@ -1,18 +1,16 @@
 import SwiftSCAD
 import Foundation
 
-Project(root: "~/Desktop/airtag") {
-    Product("basic shape") {
-        BasicShape()
-    }
-    Product("sandwich") {
-        Sandwich()
-    }
-    Product("nutsandbolts") {
-        NutsAndBoltsHolder()
-    }
-    Product("snap") {
-        SnapInHolder()
-    }
+save(to: "~/Desktop/airtag") {
+    BasicShape()
+        .named("basic shape")
+
+    Sandwich()
+        .named("sandwich")
+
+    NutsAndBoltsHolder()
+        .named("nutsandbolts")
+
+    SnapInHolder()
+        .named("snap")
 }
-.process()

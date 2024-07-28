@@ -1,25 +1,32 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "swift-collections",
-        "repositoryURL": "https://github.com/apple/swift-collections.git",
-        "state": {
-          "branch": null,
-          "revision": "48254824bb4248676bf7ce56014ff57b142b77eb",
-          "version": "1.0.2"
-        }
-      },
-      {
-        "package": "SwiftSCAD",
-        "repositoryURL": "https://github.com/tomasf/SwiftSCAD.git",
-        "state": {
-          "branch": "main",
-          "revision": "26d2a070a827b445c933996cfe3b65191328fbd9",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "3d2dc41a01f9e49d84f0a3925fb858bed64f702d",
+        "version" : "1.1.2"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "9cb486020ebf03bfa5b5df985387a14a98744537",
+        "version" : "1.6.1"
+      }
+    },
+    {
+      "identity" : "swiftscad",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tomasf/SwiftSCAD.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3f32457f3f6236d91682c7b7119fac1f7a6e01f3"
+      }
+    }
+  ],
+  "version" : 2
 }

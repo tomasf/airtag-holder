@@ -29,24 +29,30 @@ struct SnapInHolder: Shape3D {
 
     var body: Geometry3D {
         Circle(diameter: outerDiameter)
-            .extruded(height: fullHeight, chamferSize: chamferSize, method: .convexHull, sides: .both)
+            .extruded(height: fullHeight, topEdge: .chamfer(size: chamferSize), bottomEdge: .chamfer(size: chamferSize), method: .convexHull)
             .adding {
                 // Loop
                 let offset = Vector2D(outerDiameter / 2, 0)
-                RoundedRectangle(loopOuterSize + offset, cornerRadius: loopCornerRadius, center: .y)
+                Rectangle(loopOuterSize + offset)
+                    .aligned(at: .centerY)
+                    .roundingRectangleCorners(radius: loopCornerRadius)
                     .subtracting {
-                        RoundedRectangle(loopInnerSize + offset, cornerRadius: loopCornerRadius - loopWidth, center: .y)
+                        Rectangle(loopInnerSize + offset)
+                            .aligned(at: .centerY)
+                            .roundingRectangleCorners(radius: loopCornerRadius - loopWidth)
                     }
-                    .extruded(height: loopThickness, chamferSize: chamferSize, method: .layered(height: layerThickness), sides: .both)
+                    .extruded(height: loopThickness, topEdge: .chamfer(size: chamferSize), bottomEdge: .chamfer(size: chamferSize), method: .layered(height: layerThickness))
             }
             .subtracting {
                 airTagShape(tolerance: tolerance)
                     .translated(z: -airTagZeroZ)
 
                 // Splits
-                Rectangle([outerDiameter / 2 + 1, splitWidth], center: .y)
+                Rectangle([outerDiameter / 2 + 1, splitWidth])
+                    .aligned(at: .centerY)
                     .extrudedHull(height: topExtension + 0.001) {
-                        Rectangle([outerDiameter / 2 + 1, splitWidth + 2 * splitSlopeLength], center: .y)
+                        Rectangle([outerDiameter / 2 + 1, splitWidth + 2 * splitSlopeLength])
+                            .aligned(at: .centerY)
                     }
                     .repeated(around: .z, in: 0°..<360°, count: splitCount)
                     .translated(z: fullHeight - topExtension)

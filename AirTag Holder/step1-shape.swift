@@ -7,6 +7,6 @@ struct BasicShape: Shape3D {
     var body: Geometry3D {
         Polygon(shapePoints)
             .translated(x: -airTagRadius)
-            .extruded(angles: 0°..<360°)
+            .extruded()
     }
 }
