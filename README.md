@@ -12,9 +12,9 @@ There are many tools for designing in 3D. A popular choice is Autodesk Fusion 3D
 
 Transitional GUI-based CAD tools make it easy to throw something together without thinking much about exact measurements. While this can be an advantage, it’s also easier to keep cheating and end up with an unorganized mess. In code, you have to be very literal about what you’re doing and making models parametric comes more naturally.
 
-[OpenSCAD](https://openscad.org) is a program and language designed for 3D modelling, using boolean operations to combine shapes. It’s made specifically for building shapes, so it doesn’t let you apply textures, for example. Colors are available, but they're only meant to improve contrast and tell things apart during development; the exported mesh isn't colored. The language is simple but somewhat limited. Arrays exist, but there are no dictionaries or structures. This is why I created [SwiftSCAD](https://github.com/tomasf/SwiftSCAD), a Swift DSL that outputs OpenSCAD code. It gives you the power of a better language and a more convenient syntax.
+[OpenSCAD](https://openscad.org) is a program and language designed for 3D modelling, using boolean operations to combine shapes. It’s made specifically for building shapes, so it doesn’t let you apply textures, for example. Colors are available, but they're only meant to improve contrast and tell things apart during development; the exported mesh isn't colored. The language is simple but somewhat limited. Arrays exist, but there are no dictionaries or structures. This is why I created [Cadova](https://github.com/tomasf/Cadova), a Swift DSL that a 3MF model. It gives you the power of a better language and a more convenient syntax.
 
-<img src="https://user-images.githubusercontent.com/26266/159235527-37978c9f-4622-42b1-b219-79b3826807d1.png" align="right" width="50%"/>
+<img src="https://github.com/user-attachments/assets/708812fa-47c0-4f30-8fb2-0c8cbd850989" align="right" width="50%"/>
 
 ```scad
 // OpenSCAD
@@ -27,8 +27,8 @@ difference() {
 ```
 
 ```swift
-// SwiftSCAD
-Box([20, 15, 10])
+// Cadova
+Box(x: 20, y: 15, z: 10)
     .subtracting {
         Sphere(diameter: 15)
             .translated(x: 16, z: 10)
@@ -39,7 +39,7 @@ This example creates a box (`cube`), and subtracts a sphere from it using `diffe
 
 Even if you choose to use the OpenSCAD language, I don’t recommend using the built-in text editor in the OpenSCAD app. It’s a better idea to write code in your favorite text editor and use OpenSCAD to view and render the model. Enable *Design ▸ Automatic Reload and Preview* to automatically update the model preview in OpenSCAD when you save the code in an external editor.
 
-If you use SwiftSCAD, running your code writes the resulting OpenSCAD code to a file. You use the OpenSCAD app to preview and render your model, so you can have it reload automatically in the same way.
+If you use Cadova, running your code writes the resulting 3MF model to a file. You use the [Cadova Viewer](https://github.com/tomasf/CadovaViewer) app to view your model, so you can have it reload automatically in the same way.
 
 ## Basic Shape
 
@@ -51,7 +51,7 @@ Luckily, Apple publishes [a document](https://developer.apple.com/accessories/Ac
 
 After some tedious typing (the numbers in the PDF aren’t text, so you can’t just copy them), I built an array of coordinates that we can use to make a polygon of the profile.
 
-The `extrude(angles:)` method ([`rotate_extrude`](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/2D_to_3D_Extrusion#Rotate_Extrude) in OpenSCAD) accepts a 2D shape and rotates it around the Z axis to produce a 3D shape, which is exactly what we need.
+The `revolved(in:)` method ([`rotate_extrude`](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/2D_to_3D_Extrusion#Rotate_Extrude) in OpenSCAD) accepts a 2D shape and rotates it around the Z axis to produce a 3D shape, which is exactly what we need.
 
 ```swift
 let shapePoints: [Vector2D] = [[15.935, 7.98], [15.93, 7.97], [15.10, 7.96], [14.27, 7.95], [13.44, 7.95], [12.61, 7.92], [11.78, 7.89], [10.96, 7.85], [10.13, 7.81], [9.30, 7.75], [8.48, 7.69], [7.65, 7.62], [6.83, 7.54], [6.00, 7.44], [5.18, 7.33], [4.36, 7.20], [3.55, 7.03], [2.75, 6.82], [1.97, 6.55], [1.23, 6.18], [0.58, 5.67], [0.13, 4.98], [0.00, 4.17], [0.24, 3.38], [0.77, 2.75], [1.46, 2.29], [3.21, 2.29], [3.21, 0.88], [4.18, 0.75], [5.16, 0.63], [6.13, 0.52], [7.11, 0.42], [8.09, 0.33], [9.07, 0.26], [10.04, 0.19], [11.02, 0.13], [12.00, 0.08], [12.98, 0.05], [13.97, 0.02], [14.95, 0.01], [15.93, 0.00]]
@@ -62,7 +62,7 @@ Polygon(shapePoints)
     .extruded(angles: 0°..<360°)
     .save(to: "~/Desktop/AirTag Holder.scad")
 ```
-<img src="https://user-images.githubusercontent.com/26266/159237353-03523fcd-6dc7-4fb1-a042-cbacb1529d3a.png"/>
+<img src="https://github.com/user-attachments/assets/d7c979ba-6ef8-4364-948d-8149ca73c56f"/>
 
 Nice. It definitely looks like an AirTag! We have the shape of the tag itself, but what we want is some kind of holder to attach to a tag.
 
